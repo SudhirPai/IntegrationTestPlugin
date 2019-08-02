@@ -1,0 +1,48 @@
+plugins {
+
+    id 'groovy'
+
+    id "com.gradle.plugin-publish" version "0.9.9"
+}
+
+apply plugin: 'groovy'
+
+
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile localGroovy()
+    compile gradleApi()
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allJava
+    archiveClassifier = 'sources'
+}
+
+task javadocJar(type: Jar) {
+    from javadoc
+    archiveClassifier = 'javadoc'
+}
+
+
+pluginBundle {
+   // website = 'https://scalified.com/'
+    vcsUrl = 'https://github.com/SudhirPai/IntegrationTestPlugin'
+    description = 'Gradle Integration Test Plugin'
+  // tags = ['it', 'integration test', 'test', 'integration', 'intTest']
+
+    plugins {
+        itPlugin {
+            id = 'com.cerner.plugins'
+            displayName = 'Integration Test Plugin'
+            version = project.version
+        }
+    }
+}
+
+

@@ -1,0 +1,49 @@
+{
+  "formatVersion": "0.4",
+  "component": {
+    "group": "com.cerner.plugin",
+    "module": "basicGradlePlugin",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "5.2.1",
+      "buildId": "c7q4lijgnfharhb4kt4z5ccpru"
+    }
+  },
+  "variants": [
+    {
+      "name": "runtime",
+      "attributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "basicGradlePlugin-1.0-SNAPSHOT.jar",
+          "url": "basicGradlePlugin-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha1": "111c0abde1d50dd2ecd402b9cd2b10ed404369",
+          "md5": "cca4c5defad207356085abd6458c7e0"
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "attributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "basicGradlePlugin-1.0-SNAPSHOT.jar",
+          "url": "basicGradlePlugin-1.0-SNAPSHOT.jar",
+          "size": 261,
+          "sha1": "111c0abde1d50dd2ecd402b9cd2b10ed404369",
+          "md5": "cca4c5defad207356085abd6458c7e0"
+        }
+      ]
+    }
+  ]
+}
